@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/login.css">
+	<title>Document</title>
+	<link rel="icon" href="/images/icon.ico">
+</head>
+<body>
+    <!--Login-->
+    <h2>TEST</h2>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<span>or use your account</span>
+			<input id="uEmail" type="email" placeholder="Email" />
+			<input id="uPass" type="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<button onclick="signin()">Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	
+</footer>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use-->
+ <!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+
+<script>
+	// Your web app's Firebase configuration
+	var firebaseConfig = {
+	  apiKey: "AIzaSyD6K2WWQrD7vtWqgscmsLoKGG_sZ6Bz_Lw",
+	  authDomain: "test-server-85be5.firebaseapp.com",
+	  databaseURL: "https://test-server-85be5.firebaseio.com",
+	  projectId: "test-server-85be5",
+	  storageBucket: "test-server-85be5.appspot.com",
+	  messagingSenderId: "863397754884",
+	  appId: "1:863397754884:web:4377bd3181b96b0a0fdd51"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+  </script>
+
+<script src="/script/firebase.js"></script>
+
+</body>
+</html>
